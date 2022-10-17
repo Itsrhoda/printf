@@ -42,22 +42,27 @@ Project Requirements
 
 Mandatory Tasks
 
-    Write function that produces output with conversion specifiers c, s, and %.
-    Handle conversion specifiers d, i.
-    Create a man page for your function.
+  0. Write function that produces output with conversion specifiers c, s, and %.
+  1. Handle conversion specifiers d, i.
+  2. Create a man page for your function.
 
 Advanced Tasks
 
-    Handle conversion specifier b.
-    Handle conversion specifiers u, o, x, X.
-    Use a local buffer of 1024 chars in order to call write as little as possible.
-    Handle conversion specifier S.
-    Handle conversion specifier p.
-    Handle flag characters +, space, and # for non-custom conversion specifiers.
-    Handle length modifiers l and h for non-custom conversion specifiers.
-    Handle the field width for non-custom conversion specifiers.
-    Handle the precision for non-custom conversion specifiers.
-    Handle the 0 flag character for non-custom conversion specifiers.
-    Handle the custom conversion specifier r that prints the reversed string.
-    Handle the custom conversion specifier R that prints the rot13'ed string.
-    All above options should work well together.
+  3. Handle conversion specifier b.
+  4. Handle conversion specifiers u, o, x, X.
+  5. Use a local buffer of 1024 chars in order to call write as little as possible.
+  6. Handle conversion specifier S.
+  7. Handle conversion specifier p.
+  8. Handle flag characters +, space, and # for non-custom conversion specifiers.
+  9. Handle length modifiers l and h for non-custom conversion specifiers.
+  10. Handle the field width for non-custom conversion specifiers.
+  11. Handle the precision for non-custom conversion specifiers.
+  12. Handle the 0 flag character for non-custom conversion specifiers.
+  13. Handle the custom conversion specifier r that prints the reversed string.
+  14. Handle the custom conversion specifier R that prints the rot13'ed string.
+  15. All above options should work well together.
+
+Authors
+
+Rhoda Manyaga - Itsrhoda
+Mary Kamau - mary-muthoni 
