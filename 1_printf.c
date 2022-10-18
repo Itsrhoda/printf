@@ -1,7 +1,17 @@
 #include "main.h"
 
 /**
- * @ _you don’t have to handle the flag chararacers
- * @wid: you don’t have to handle field width
- * @pre: You don’t have to handle precision
- * @mod: You don’t have to handle the length modifiers
+ * _strlen - Returns the number of characters in a string.
+ * @str: the string to find the length of
+ *
+ * Return: Length of the string.
+ */
+unsigned int _strlen(char *str)
+{
+	unsigned int len = 0;
+
+	while (str[len])
+		len++;
+
+	return (len);
+}
