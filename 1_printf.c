@@ -1,17 +1,28 @@
 #include "main.h"
 
 /**
- * _strlen - Returns the number of characters in a string.
- * @str: the string to find the length of
+ * rev_fmt - Handles conversion specifier "r"
+ * @buffer: Pointer to struct buffer
+ * @args: the string to be printed in reverse
  *
- * Return: Length of the string.
+ * Return: Pointer to struct buffer.
  */
-unsigned int _strlen(char *str)
+mk_buffer rev_fmt(mk_buffer buffer, va_list args)
 {
-	unsigned int len = 0;
+	char *str;
+	int len;
 
-	while (str[len])
-		len++;
+	str = va_arg(args, char *);
+	len = _strlen(str);
+	len--;
+	while (len >= 0)
+	{
+		*buffer.box = str[len];
+		buffer.box++;
+		buffer.size++;
+		len--;
+	}
 
-	return (len);
+	buffer.box--;
+	return (buffer);
 }
