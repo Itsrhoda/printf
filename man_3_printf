@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .TH man 1 "21 November 2016" "0.01" "_printf man page"
 .SH NAME
 .B _printf
@@ -18,6 +17,7 @@ as described below.
 Upon successful return, these functions return the number of characters
 printed (excluding the null byte used to end output to strings).
 .RE
+
 .B The conversion specifier
 .br
 .RS 3
@@ -61,43 +61,5 @@ converted and rotated 13 characters forward in the alphabet.
 .LP
 .RE
 .SH AUTHOR
-
-Written by \Itsrhoda && mary-muthoni
-
-=======
-.TH _PRINTF "1" "18 OCTOBER 2022" "0x11. C - printf"
-.SH NAME
-_printf - print data according to a format
-.SH SYNOPSIS
-.B printf FORMAT [ARGUMENT]...
-.SH DESCRIPTION
-Prints ARGUMENT(s) based on FORMAT
-
-Format specifiers (beginning with %), the additional arguments following format are formatted and inserted.
-
-_printf will also take an indefinite amount of arguments.
-
-Example:
-_printf("%s", text);
-
-In the Example print the value of text with %s give the format of text.
-
-.B The conversion specifiers
-
-.IP %c
-- prints character.
-.IP %s
-- prints string.
-.IP %%
-- prints percentage symbol.
-.IP %d
-- prints decimal.
-.IP %i
-- prints integer number.
-
-.SH SEE ALSO
-.I printf (3)
-.SH AUTHOR
 MANYAGA Rhoda ( Itsrhoda )
 KAMAU Mary ( mary-muthoni )
->>>>>>> c9fc5118c79d9a0171659267e84eb5081a5e43b3
