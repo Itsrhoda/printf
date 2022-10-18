@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /*
@@ -71,22 +71,21 @@ int _print_int(va_list ls)
 	if (a < 0)
 	{
 		pr = '-';
-		len = len + write(1, &pr, 1);
-		n = a * -1;
+		len = len + write(1, &pr, 1);															n = a * -1;
 		
 	}
 	else
 		n = a;
 	while (n / expo > 9)
 		expo *= 10;
-		
 	while (expo != 0)
-											{
-												pr = n / expo + '0';
-												len = len + write(1, &pr, 1);
-												n = n % expo;
-												expo = expo / 10;
-																					}
 
+	{
+		pr = n / expo + '0';
+		len = len + write(1, &pr, 1);
+		n = n % expo;
+		expo = expo / 10;
+
+	}
 	return (len);
 }
