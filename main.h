@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAINF_H
 
 #define BUFSIZE 1025
 #include <stdarg.h>
@@ -11,8 +11,8 @@
  */
 typedef struct validTypes
 {
-		char *valid;
-		char *(*f)();
+	char *valid;
+	char *(*f)();
 } v_types;
 
 int _printf(const char *format, ...);
